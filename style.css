@@ -1220,10 +1220,19 @@ footer {
 /***** End  media queries Section *****/ 
 
 
-i.fa-solid.fa-cart-shopping {
+.navbarcart {
   display: flex;
   gap: 10px;
   padding: 6px 5px;
+  justify-content: center;
+  align-items: center; 
+  display: flex;
+}
+
+a#cartValue.nav-link.add-to-cart-button {
+  display: flex;
+  gap: 10px;
+  padding: 6px 15px;
   justify-content: center;
   align-items: center;
 }
