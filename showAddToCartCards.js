@@ -3,6 +3,7 @@ import { fetchQuantityFromCartLS } from './fetchQuantityFromCartLS';
 import { getCartProductFromLS } from './getCardProducts';
 import { incrementDecrement } from './incrementDecrement';
 import { removeProdFromCart } from './removeProdFromCart';
+import { updateCartProdTotal } from './updateCartProdTotal';
 
 let cartProducts =  getCartProductFromLS();
 
@@ -45,7 +46,7 @@ filterProducts.forEach((curProd) => {
 };
 showCartProduct();
 
-
+updateCartProdTotal();
 
 // 
 

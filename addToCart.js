@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCardProducts";
+import { showToast } from "./showToast";
 import { updateCartValue } from "./updateCartValue";
 
 getCartProductFromLS();
@@ -23,7 +24,10 @@ if(existingProd && quantity > 1) {
       });
       console.log(updatedCart)
       localStorage.setItem('cardProductLS', JSON.stringify(updatedCart));
-      
+
+      // show toast when add to cart 
+
+      showToast('add', id);
 }
 
 
@@ -40,7 +44,13 @@ if(existingProd && quantity > 1) {
       arrLocalStorageProduct.push({id, quantity , price});
       localStorage.setItem('cardProductLS', JSON.stringify(arrLocalStorageProduct));
 
+      
+    
+
       updateCartValue(arrLocalStorageProduct);
+        // show toast when add to cart 
+
+        showToast('add', id);
 }; 
 
 

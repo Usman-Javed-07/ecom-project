@@ -1,6 +1,7 @@
 // import { getCartProductFromLS } from "./getCardProducts";
 
 import { getCartProductFromLS } from "./getCardProducts";
+import { updateCartProdTotal } from "./updateCartProdTotal";
 
 export const incrementDecrement = (event, id, stock, price) => {
 
@@ -60,7 +61,7 @@ export const incrementDecrement = (event, id, stock, price) => {
 
       productQuantity.innerText = quantity;
       productPrice.innerText = localStoragePrice;
-      // updateCartProductTotal();
+      updateCartProdTotal();
 };
 
 
