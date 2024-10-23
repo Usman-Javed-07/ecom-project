@@ -1236,3 +1236,8 @@ a#cartValue.nav-link.add-to-cart-button {
   justify-content: center;
   align-items: center;
 }
+/* @media screen and (max-width:440px) {
+ nav.navbar ul {
+    display: block;
+  }
+} */
